@@ -1,0 +1,24 @@
+Airflow Task 1
+1. Check if this csv file exist or not (If csv file doesn't exist skip all subsequent tasks)
+
+ 
+
+Airflow Task 2
+2. read csv file and write in parq and store this parq data in S3 as per InvoiceDate
+
+ 
+
+Airflow Task 3
+3. create partitioned hive table on top of this S3 data mentioned in step 2
+
+ 
+
+Airflow Task 4
+4. Remove the records which do not have CustomerID. (Write in parq)
+5. Get the records which have CustomerID write o/p to parquet and create hive table for this data.
+
+ 
+
+Airflow Task 5
+6. Add minimium (min_UnitPrice Column) and maximum (max_UnitPrice Column) UnitPrice for each InvoiceNo. (write in parq)
+7. Find the details of InvoiceNo having maximum Quantity no. in each year in InvoiceDate.(Write o/p in csv)
